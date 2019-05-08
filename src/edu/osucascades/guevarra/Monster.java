@@ -11,8 +11,12 @@ public class Monster {
     static private int numOfMonsters;
 
     //add constructor(s)
+    public Monster() {
+
+    }
+
     // add method  It returns the name of the Monster. What is its access modifier? Is it static?
-    static public String getName() {
+    static public String getName(String monsterName) {
         return name;
 
     }
@@ -53,10 +57,10 @@ public class Monster {
 //It prints the monster's name and whether it's alive or dead
 
 
-        //do not change function sayName. It is implemented for you
-        static public void sayName() {
-            System.out.println("You can call me Monster " + name + " if you're nice!");
-        }
+    //do not change function sayName. It is implemented for you
+    static public void sayName() {
+        System.out.println("You can call me Monster " + name + " if you're nice!");
+    }
 
     //function attack takes 2 parameters: the monster to attack and how many many health points the attacked monster loses when attacked
     public void attack(Monster monster, int healthPoints) {
@@ -68,8 +72,11 @@ public class Monster {
     }
 
 
-        public static void main (String[]args){
+    public static void main(String[] args) {
 //Test your monster object before moving on
+        Monster genericMonster = new Monster();
+
+
 
 //create a monster1 object and set it's name
 //make it tell you who it is
@@ -81,7 +88,7 @@ public class Monster {
 //check to see if monster 2 is alive
 //if it is, attack it again until it's dead
 //how many monsters are left?
-        }
-
     }
+}
+
 
