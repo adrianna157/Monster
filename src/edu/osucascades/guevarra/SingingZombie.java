@@ -1,9 +1,16 @@
 package edu.osucascades.guevarra;
 
 public class SingingZombie extends Zombie {
-    SingingZombie(){
+    String favoriteSong;
+    String name;
+
+    public SingingZombie(){
 
     }
+
+ public String favoriteSong(String name){
+        return favoriteSong;
+ }
 
 
 }
