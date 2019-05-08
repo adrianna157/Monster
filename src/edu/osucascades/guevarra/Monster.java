@@ -25,27 +25,32 @@ class Monster {
 
     //add constructor(s)
     // add method  It returns the name of the Monster. What is its access modifier? Is it static?
-    getName(){
+    public void getName() {
 
     }
-//add method  It has a String parameter used to set the Monster's name. What is its access modifier? Is it static?
-setName(){
 
-}
-//add method It returns the health of the Monster. What is its access modifier? Is it static?
-getHealth(){
+    //add method  It has a String parameter used to set the Monster's name. What is its access modifier? Is it static?
+    public void setName() {
 
-}
-//add method It has a integer parameter used to set the Monster's health. What is its access modifier? Is it static?
-setHealth(){
+    }
 
-}
-//add method  It returns the total # of monsters created. What is its access modifier? Is it static?
-getNumOfMonsters(){
+    //add method It returns the health of the Monster. What is its access modifier? Is it static?
+    public void getHealth() {
 
-}
-//function attack takes 2 parameters: the monster to attack and how many many health points the attacked monster loses when attacked
-    public void attack(.....) {
+    }
+
+    //add method It has a integer parameter used to set the Monster's health. What is its access modifier? Is it static?
+    public void setHealth() {
+
+    }
+
+    //add method  It returns the total # of monsters created. What is its access modifier? Is it static?
+    public void getNumOfMonsters() {
+
+    }
+
+    //function attack takes 2 parameters: the monster to attack and how many many health points the attacked monster loses when attacked
+    public void attack() {
 //print the name of the monster being attacked, lower its health, print it's health
     }
 

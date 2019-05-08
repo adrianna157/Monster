@@ -14,4 +14,8 @@ public class Zombie extends Monster {
 
     }
 
+    public void makeNoise(){
+
+    }
+
 }
