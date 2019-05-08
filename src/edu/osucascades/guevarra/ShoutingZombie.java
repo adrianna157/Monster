@@ -1,4 +1,7 @@
 package edu.osucascades.guevarra;
 
-public class ShoutingZombie {
+public class ShoutingZombie extends Zombie {
+    ShoutingZombie(){
+
+    }
 }
