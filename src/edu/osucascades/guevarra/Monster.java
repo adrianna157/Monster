@@ -17,6 +17,7 @@ public class Monster {
 
     // add method  It returns the name of the Monster. What is its access modifier? Is it static?
     static public String getName(String monsterName) {
+        name = "Jill";
         return name;
 
     }
@@ -75,7 +76,8 @@ public class Monster {
     public static void main(String[] args) {
 //Test your monster object before moving on
         Monster genericMonster = new Monster();
-
+        genericMonster.getName();
+        genericMonster.setName("Jill");
 
 
 //create a monster1 object and set it's name

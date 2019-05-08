@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="845b9a3d-4bc9-43c4-995d-324a72cdd2e9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled104/edu/osucascades/guevarra/Monster.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled104/edu/osucascades/guevarra/Monster.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled104/edu/osucascades/guevarra/Zombie.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled104/edu/osucascades/guevarra/Zombie.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/edu/osucascades/guevarra/Monster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/osucascades/guevarra/Monster.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/osucascades/guevarra/Zombie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/osucascades/guevarra/Zombie.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,8 +19,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/edu/osucascades/guevarra/Monster.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="633">
-              <caret line="91" column="4" lean-forward="true" selection-start-line="91" selection-start-column="4" selection-end-line="91" selection-end-column="4" />
+            <state relative-caret-position="137">
+              <caret line="79" column="39" selection-start-line="79" selection-start-column="39" selection-end-line="79" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -175,10 +171,11 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.2890411" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.2890411" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32876712" />
+      <window_info anchor="right" id="Coverage" side_tool="true" weight="0.32956383" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -195,8 +192,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/edu/osucascades/guevarra/Monster.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="633">
-          <caret line="91" column="4" lean-forward="true" selection-start-line="91" selection-start-column="4" selection-end-line="91" selection-end-column="4" />
+        <state relative-caret-position="137">
+          <caret line="79" column="39" selection-start-line="79" selection-start-column="39" selection-end-line="79" selection-end-column="39" />
         </state>
       </provider>
     </entry>
