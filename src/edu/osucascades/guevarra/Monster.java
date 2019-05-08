@@ -8,22 +8,27 @@ public class Monster {
     static public String name;
     static public int health;
     static public boolean dead;
-    static private int numOfMonsters;
+    static public int numOfMonsters;
 
     //add constructor(s)
-    public Monster() {
+    public Monster(){
 
     }
+//    public Monster(name, health) {
+//        this.name= name;
+//        this.health = health;
+//    }
 
     // add method  It returns the name of the Monster. What is its access modifier? Is it static?
-    static public String getName(String monsterName) {
-        name = "Jill";
+    static public String getName() {
+
         return name;
 
     }
 
     //add method  It has a String parameter used to set the Monster's name. What is its access modifier? Is it static?
-    static public void setName(String name) {
+    static public void setName(String monsterName) {
+        name = monsterName;
 
     }
 
@@ -35,17 +40,19 @@ public class Monster {
 
     //add method It has a integer parameter used to set the Monster's health. What is its access modifier? Is it static?
     static public void setHealth(int health) {
-
+    System.out.println(name  + "Health is "  + health);
     }
 
     //add method  It returns the total # of monsters created. What is its access modifier? Is it static?
     static public int getNumOfMonsters() {
+
         return numOfMonsters;
     }
 
     //function isDead has no parameters. It returns true of the monster is dead and false if its alive.
     static public boolean isDead() {
-        if (dead) {
+        if (true) {
+            System.out.println( name + " is DEAD!");
             return true;
         } else {
             return false;
@@ -64,32 +71,46 @@ public class Monster {
     }
 
     //function attack takes 2 parameters: the monster to attack and how many many health points the attacked monster loses when attacked
-    public void attack(Monster monster, int healthPoints) {
+    static public void attack(Monster monster, int healthPoints) {
 //print the name of the monster being attacked,
-        System.out.println(monster);
-        // lower its health, print it's health
-        System.out.println(healthPoints);
+
+        System.out.println( monster.name + " is being attacked!");
+        // lower its health
+        healthPoints -= 5;
+        //  print it's health
+        System.out.println(monster.name + "'s health is "+ healthPoints);
 
     }
 
 
     public static void main(String[] args) {
 //Test your monster object before moving on
-        Monster genericMonster = new Monster();
-        genericMonster.getName();
-        genericMonster.setName("Jill");
+
 
 
 //create a monster1 object and set it's name
+        Monster monster1 = new Monster();
+        monster1.setName("Jill");
 //make it tell you who it is
+        monster1.sayName();
 //set the monster's health and check to see if it was set
+        monster1.setHealth(20);
 //how many monsters have been created?
+
 //create a monster2 object
+        Monster monster2 = new Monster();
+        monster2.setName("Jack");
+        monster2.sayName();
+        monster2.setHealth(10);
 //how many monsters have been created?
 //make monster1 attack monster 2
+        monster1.attack(monster2, 10);
 //check to see if monster 2 is alive
 //if it is, attack it again until it's dead
+        monster1.attack(monster2, 5);
 //how many monsters are left?
+        monster2.isDead();
+
     }
 }
 
