@@ -5,53 +5,62 @@ public class Monster {
     //add fields using the most restrictive type possible
 //For all fields think about the following:
 //(What is the access modifier? Public, Private,Protected? Is it static?)
-    static public String name;
-    static public int health;
-    static public boolean dead;
-    static public int numOfMonsters;
+     public String name;
+     public int health;
+     public boolean dead;
+     //This is a shared variable with all other monsters
+    static public int numOfMonsters = 0;
 
     //add constructor(s)
     public Monster(){
+        numOfMonsters = 1;
+        this.name = "Default";
+        this.health = 0;
 
     }
-//    public Monster(name, health) {
-//        this.name= name;
-//        this.health = health;
-//    }
+    public Monster(String name, int health) {
+
+        numOfMonsters += 1;
+        this.name= name;
+        this.health = health;
+
+    }
 
     // add method  It returns the name of the Monster. What is its access modifier? Is it static?
-    static public String getName() {
+    public String getName() {
 
         return name;
 
     }
 
     //add method  It has a String parameter used to set the Monster's name. What is its access modifier? Is it static?
-    static public void setName(String monsterName) {
+    public String setName(String monsterName) {
         name = monsterName;
 
+        return monsterName;
     }
 
     //add method It returns the health of the Monster. What is its access modifier? Is it static?
-    static public int getHealth() {
+    public int getHealth() {
 
         return health;
     }
 
     //add method It has a integer parameter used to set the Monster's health. What is its access modifier? Is it static?
-    static public void setHealth(int health) {
-    System.out.println(name  + "Health is "  + health);
+    public void setHealth(int health) {
+        this.health = health;
+    System.out.println(name  + "Health is "  + this.health);
     }
 
     //add method  It returns the total # of monsters created. What is its access modifier? Is it static?
-    static public int getNumOfMonsters() {
+    public int getNumOfMonsters() {
 
         return numOfMonsters;
     }
 
     //function isDead has no parameters. It returns true of the monster is dead and false if its alive.
-    static public boolean isDead() {
-        if (true) {
+     public boolean isDead() {
+        if (dead) {
             System.out.println( name + " is DEAD!");
             return true;
         } else {
@@ -66,17 +75,18 @@ public class Monster {
 
 
     //do not change function sayName. It is implemented for you
-    static public void sayName() {
+     public void sayName() {
         System.out.println("You can call me Monster " + name + " if you're nice!");
     }
 
     //function attack takes 2 parameters: the monster to attack and how many many health points the attacked monster loses when attacked
-    static public void attack(Monster monster, int healthPoints) {
+    public void attack(Monster monster, int healthPoints) {
 //print the name of the monster being attacked,
 
         System.out.println( monster.name + " is being attacked!");
         // lower its health
-        healthPoints -= 5;
+//        healthPoints -= 5;
+        health -= healthPoints;
         //  print it's health
         System.out.println(monster.name + "'s health is "+ healthPoints);
 
@@ -112,6 +122,8 @@ public class Monster {
         monster2.isDead();
 
     }
+
+
 }
 
 
